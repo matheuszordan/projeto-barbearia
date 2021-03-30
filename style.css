@@ -1,0 +1,304 @@
+body{
+    font-family: 'Montserrat', sans-serif;   /* Importando a fonte */
+}
+
+header{
+    background: #BBBBBB;            
+    padding: 20px 0 ;                        /* padding: distancia de cima e da lateral */
+}
+
+.caixa{
+    position: relative;         
+    width: 940px;                              /* width: largura */
+    margin: 0 auto;                             /* margem : 0 e automatica */ 
+
+}
+
+nav{
+    position: absolute;                       /* posição absoluta 110 pixels do topo da pagina e colada na direta da pagina*/  
+    top: 110px;
+    right:0;
+}
+
+nav li{
+    display: inline;                            /* display em linha */
+    margin: 0 0 0 15px;                         /* margem 0 para a cima, 0 para a direita, 0 para baixo e 15 pixels a esquerda */
+}
+
+nav a {
+    text-transform: uppercase;                  /* transformando as letras todas em maiusculas */
+    color: #000000;                            /* Cor da fonte RGB , 0 ausencia de cor , logo cor preta */
+    font-weight: bold;                          /* Deixa a fonte em negrito */
+    font-size: 22px;                            /* Tamanho da fonte */ 
+    text-decoration: none;                      /* sem decoração no texto */
+
+}
+
+nav a:hover{                                    /* a:hover serve para quando o mouse passar por cima do que ta escrito */
+    color: #C78C19;                             /* cor que vai ficar quando o mouse ficar em cima */ 
+    text-decoration: underline;                 /* colocando sublinhado quando o mouse passar por cima */
+}
+
+
+.produtos{
+    width: 940px;                               /* largura de 940 pixels */ 
+    margin: 0 auto;                             /* margem zero e se adequando ao tamanho da pagina automatico */
+    padding: 50px 0;                            /* padding: distanciamento */
+}
+
+.produtos li{
+    display: inline-block;                      /*Como vai se comportar ? em linha nao vai se alterar */
+    text-align: center;                         /* texto alinhado ao centro */
+    width: 30%;                                 /* largura de 30% */
+    vertical-align: top;                        /* Alinhamento vertical com o topo */
+    margin: 0 1.5%;                             
+    padding: 30x 20px;                          
+    box-sizing: border-box;                     /* tamanho da caixa, e o tipo de caixa */
+    border:2px solid #000000;                 /* como vai ser as bordas da caixa, 2px de borda solido e preto */
+    border-radius: 10px;                        /* arredondando as arestas da caixa */
+
+}
+/* quando passar o mouse por cima dos produtos a cor da borda vai mudar*/ 
+.produtos li:hover{
+    border-color: #C78C19;
+}
+/* quando passar o mouse por cima dos produtos a cor da borda vai mudar*/ 
+.produtos li:active{
+    border-color: #088C19;
+    
+}
+/* quando passar o mouse por cima de h2 a fonte dos produtos ira aumenta */ 
+.produtos li:hover h2{   
+font-size : 34px
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+.produto-descricao{
+ font-size: 18px;   
+ padding: 25px 0;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10 px;
+}
+
+footer{
+    text-align: center;
+    background: url("produtos/bg.jpg");             /* backgroud do rodape, a imagem se divide ate completar a pagina toda */
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0  ;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.Enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;                                 /* deixado a borda arredondada */
+    transition: 1s all;                                 /* transição */
+    cursor: pointer;                                    /* cursor vira a maozinha quando ficar em cima */
+    
+
+}
+
+.Enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);                              /* quando o mouse parar em cima a escala do butao vai aumentar 20% */
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px ;
+}
+
+/* CSS da pagina inicial */
+.banner{
+    width: 100%;
+
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;       /* em serve para dobrar a fonte principal */
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+
+.principal p {
+    margin: 0 0 1em;
+
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0 ; /* cima, direita, baixo , esquerda */
+}
+
+.mapa{
+    padding: 3em 0;
+  
+    background: linear-gradient(#FEFEFE, #888888);                  /* esse comando faz a transição de cores, faz o degradê , da pra escolher a angulação tambem*/
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+} 
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+  
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;              /* tamanho da linha que aumenta o tamanho da fonte*/
+}
+
+/*.itens:first-child {                /* a primeira palavra da classe itens vai ter o seu peso de fonte em negrito */
+/*    font-weight: bold;
+
+}*/
+
+.itens:nth-child(1){         /* deixo o 4 item em negrito */  /* se eu usar o 2n no lugar do 4, todos os elementos pares ficam em negrito*/
+    font-weight: bold;
+}
+
+.itens:before{                    /* classe : before ( antes do item vai adicionar o que deseja) */
+    content: "\2605";                    /* Classe: after ( depois do item vai adicionar o que deseja) */
+}
+
+.imagem-beneficios { 
+    width: 60%;
+    opacity: 1;                          
+    transition: 400ms;
+    box-shadow: 10px 10px 5px #000000
+   /* box-shadow: 10px 10px 5px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,05);     adicionando uma sombra na imagem */
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;                    /* coloca uma sombra em cima da imagem quando passamos o mouse em cima da imagem*/
+}
+
+
+.video{
+    width: 560px;
+    margin: 1em auto;              /* Margem primeiro numero referente a parte de cima, segundo numero referente a parte lateral*/ 
+}
+
+/* main > p {                       Seleciono apenas o p filho da tag main 
+    background: red;
+}*/
+
+/* img + p {                        seleciono apenas o p apos a imagem
+    background: blue;
+ }*/
+
+/* img ~ p {                         seleciono todos os p apos a imagem
+   background: yellow;
+}*/
+
+/* .principal p:not(#missao) {       eu pinto tudo, menos o que esta dentro de missao 
+   background: orange;
+}*/
+
+@media screen and (max-width: 480px) {
+    .caixa,.principal,.conteudo-beneficios,.mapa-conteudo,.video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
